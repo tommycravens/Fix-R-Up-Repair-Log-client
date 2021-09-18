@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Fix'R Up Repair Log</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,121 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Fix'R Up Repair Log</h1>
+      <h2 id="sign-up-header" style="display:block">Sign-up and start your language journey for free!</h2>
+      </br>
+
+      <form id="sign-up-form">
+        <label>Email:</label>
+        <input name="credentials[email]" type="email">
+        <label>Password:</label>
+        <input name="credentials[password]" type="password">
+        <label>Password Confirmation:</label>
+        <input name="credentials[password_confirmation]" type="password">
+        <input id="sign-up" type="submit" value="Create Account">
+      </form>
+
+      <p id="message"></p>
+
+      <br>
+      <h2 id="sign-in-header" style="display:block">Welcome Back!</h2>
+      </br>
+
+      <br>
+      <form id="sign-in-form" style="display:block">
+        <label>Email:</label>
+        <input name="credentials[email]" type="email">
+        <label>Password:</label>
+        <input name="credentials[password]" type="password">
+        <input id="sign-in" type="submit" value="Sign In">
+      </form>
+      </br>
+      <br>
+      <div class="container" style="display:none">
+        <button id="create" type="submit" class="btn btn-warning">CREATE</button>
+        <button id="read" type="submit" class="btn btn-warning">READ</button>
+        <button id="update" type="submit" class="btn btn-warning">UPDATE</button>
+        <button id="delete" type="submit" class="btn btn-warning">DELETE</button>
+      </div>
+      </br>
+
+
+      <!-- I want each of these options to show when you click the corresponding button. I would also like my input labels to appear ordered in more of a list vertically instead of horizontally -->
+      <br>
+      <form id="create-vocab-form" class="form" style="display:none">
+        <h4>Create New Index Card: </h4>
+        <label> Word:</label>
+        <input name="vocab[word]" type="text">
+        <label> Pronunciation</label>
+        <input name="vocab[pronunciation]" type="text">
+        <label> Definition: </label>
+        <input name="vocab[definition]" type="text">
+        <label> Sentence:</label>
+        <input name="vocab[sentence]" type="text">
+        <label> Comfort Level(1-5):</label>
+        <input name="vocab[comfortLevel]" type="text">
+        <input type="submit" value="Create Index Card!">
+      </form>
+      </br>
+
+      <br>
+      <form id="read-vocab-form" class="form" style="display:none">
+        <h4>Find All Index Cards: </h4>
+        <label>Click here</label>
+        <input type="submit" id="read-vocabs" value="Find Index Cards!">
+      </form>
+      </br>
+
+      <br>
+      <form id="update-vocab-form" class="form" style="display:none">
+        <h4>Update Index Card: </h4>
+        <label>Card ID: </label>
+        <input name="vocab[id]" type="text">
+        <label> Word:</label>
+        <input name="vocab[word]" type="text">
+        <label> Pronunciation</label>
+        <input name="vocab[pronunciation]" type="text">
+        <label> Definition: </label>
+        <input name="vocab[definition]" type="text">
+        <label> Sentence:</label>
+        <input name="vocab[sentence]" type="text">
+        <label> Comfort Level (1-5):</label>
+        <input name="vocab[comfortLevel]" type="text">
+        <input type="submit" value="Update Index Card!">
+      </form>
+      </br>
+
+      <br>
+      <form id="delete-vocab-form" class="form" style="display:none">
+        <h4>Delete Index Cards: </h4>
+        <label>Card ID: </label>
+        <input name="vocab[id]" type="text">
+        <input type="submit" value="Delete Index Card!">
+      </form>
+      </br>
+
+      <ul id="vocab_list"></ul>
+
+
+      <!-- sign out -->
+      <h2 id="sign-out-header" style="display:none">Want to Sign Out?</h2>
+      <button id="sign-out" type="button" style="display:none">
+        Sign Out
+      </button>
+
+      <br>
+      <!-- Change Password -->
+      <br>
+      <h3 id="change-password-header" style="display:none">Change Password</h3>
+      <form id="change-password" style="display:none">
+        <label> Old Password:</label>
+        <input name="passwords[old]" type="password">
+        <label>New Password:</label>
+        <input name="passwords[new]" type="password">
+        <input type="submit" value="change password">
+      </form>
+      </br>
+      </br>
+
     </body>
 </html>
