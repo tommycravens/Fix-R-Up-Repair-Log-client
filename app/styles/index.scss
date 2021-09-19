@@ -1,1 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+
+body {
+  background-color: #63776f;
+}
+h1 {
+  color: #ffd919;
+  text-shadow: 4px 4px #494f56;
+  display: flex;
+  justify-content: center;
+  text-align: center
+}
