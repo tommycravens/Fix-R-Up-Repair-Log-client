@@ -81,14 +81,14 @@ const onReadEquipmentSuccess = (responseData) => {
   equipment.forEach(equipment => {
     equipmentHtml += `
   <li>
-  equipmentType: ${equipment.equipmentType}
-  modelName: ${equipment.modelName}
-  modelYear: ${equipment.pronunciation}
-  modelNumber: ${equipment.modelNumber}
-  serialNumber: ${equipment.serialNumber}
+  <label>Equipment Type:</label> ${equipment.equipmentType},
+  <label>Model Name:</label> ${equipment.modelName},
+  <label>Model Year:</label> ${equipment.pronunciation},
+  <label>Model Number:</label> ${equipment.modelNumber},
+  <label>Serial Number:</label> ${equipment.serialNumber},
   id: ${equipment._id}
   </li>
-`
+`;
   })
   $("#equipment_list").html(equipmentHtml)
   $("#equipment_list").css("display", "block")

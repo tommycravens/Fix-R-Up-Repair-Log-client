@@ -65,12 +65,12 @@
         <label> Model Name:</label>
         <input name="equipment[modelName]" type="text">
         <label> Model Year(1900-2022): </label>
-        <input name="equipment[modelYear]" type="text">
+        <input name="equipment[modelYear]" type="number">
         <label> Model Number:</label>
         <input name="equipment[modelNumber]" type="text">
         <label> Serial Number:</label>
         <input name="equipment[serialNumber]" type="text">
-        <input type="submit" value="Create New Equipment!">
+        <input id="create-equipment-button" type="submit" value="Create New Equipment!">
       </form>
       </br>
 
@@ -78,7 +78,7 @@
       <form id="read-equipment-form" class="form" style="display:none">
         <h4>Find Your Equipment: </h4>
         <label>Click here</label>
-        <input type="submit" id="read-equipment" value="Find Your Equipment!">
+        <input id="read-equipment-button" type="submit" value="Find Your Equipment!">
       </form>
       </br>
 
@@ -92,12 +92,12 @@
         <label> Model Name:</label>
         <input name="equipment[modelName]" type="text">
         <label> Model Year(1900-2022): </label>
-        <input name="equipment[modelYear]" type="text">
+        <input name="equipment[modelYear]" type="number">
         <label> Model Number:</label>
         <input name="equipment[modelNumber]" type="text">
         <label> Serial Number:</label>
         <input name="equipment[serialNumber]" type="text">
-        <input type="submit" value="Create New Equipment!">
+        <input id="update-equipment-button" type="submit" value="Update Your Equipment!">
       </form>
       </br>
 
@@ -106,11 +106,13 @@
         <h4>Delete Equipment: </h4>
         <label>Equipment ID: </label>
         <input name="equipment[id]" type="text">
-        <input type="submit" value="Delete Equipment!">
+        <input id="delete-equipment-button" type="submit" value="Delete Equipment!">
       </form>
       </br>
 
-      <ul id="equipment_list" style="display:none"></ul>
+      <ul id="equipment_list" style="display:none">
+        <!-- <li id="equipment_list_individual"></li> -->
+      </ul>
 
 
       <!-- sign out -->
@@ -128,7 +130,7 @@
         <input name="passwords[old]" type="password">
         <label>New Password:</label>
         <input name="passwords[new]" type="password">
-        <input type="submit" value="change password">
+        <input id="change-password-button" type="submit" value="change password">
       </form>
       </br>
       </br>
