@@ -74,7 +74,7 @@ h4 {
 }
 // Sign out
 #sign-out {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Hahmlet', serif;
   border-radius: 2px;
 }
 
@@ -146,6 +146,8 @@ h4 {
 #message {
   color: #ffd919;
   font-family: 'Playfair Display', serif;
+  text-shadow: 4px 4px #000000;
+  text-align: center;
 }
 #equipment_list {
   background-color: #ffd919;
@@ -157,5 +159,6 @@ h4 {
   justify-content: center;
   border-radius: 10px;
   text-align: center;
+  color: #000000;
 
 }

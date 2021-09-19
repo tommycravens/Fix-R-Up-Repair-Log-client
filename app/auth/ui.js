@@ -91,6 +91,7 @@ const onReadEquipmentSuccess = (responseData) => {
 `
   })
   $("#equipment_list").html(equipmentHtml)
+  $("#equipment_list").css("display", "block")
 };
 
 const onUpdateEquipmentSuccess = () => {
