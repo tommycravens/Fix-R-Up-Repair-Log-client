@@ -47,7 +47,6 @@ const onChangePassword = function (event) {
 const onCreateEquipment = (event) => {
   event.preventDefault()
   const equipmentData = getFormFields(event.target)
-  console.log(equipmentData)
 
   api.createEquipment(equipmentData)
   .then(ui.onCreateEquipmentSuccess)

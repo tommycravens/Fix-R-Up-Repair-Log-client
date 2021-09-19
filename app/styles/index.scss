@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
 body {
   background-color: #63776f;
 }
@@ -23,8 +24,12 @@ h3 {
   color:  #ffd919;
   text-shadow: 4px 4px #494f56
 }
+h4 {
+  color:  #ffd919;
+  text-shadow: 4px 4px #494f56
+}
 #sign-up-form {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Hahmlet', serif;
   color: #ffd919;
   border: .5px solid $black;
   margin: 15px;
@@ -32,10 +37,11 @@ h3 {
   background-color: #494f56;
   display: flex;
   justify-content: center;
-  border-radius: 10px
+  border-radius: 10px;
+  text-shadow: 4px 4px #000000;
 }
 #sign-up {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Hahmlet', serif;
   border-radius: 2px
 }
 #sign-up:hover {
@@ -43,19 +49,25 @@ h3 {
 }
 // Sign in
 #sign-in-form {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Hahmlet', serif;
   color: #ffd919;
   border: .5px solid $black;
   margin: 15px;
   padding: 15px;
   background-color: #494f56;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px
+  border-radius: 10px;
+  text-shadow: 4px 4px #000000;
+  text-align: center;
 }
 #sign-in {
-  font-family: 'Playfair Display', serif;
-  border-radius: 2px
+  font-family: 'Hahmlet', serif;
+  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid $black;
+  border-radius: 2px;
+  text-align: center;
 }
 #sign-in:hover {
   background-color: #ffd919
@@ -78,26 +90,58 @@ h3 {
 #change-password {
   color:  #ffd919;
   text-shadow: 4px 4px #494f56;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Hahmlet', serif;
 }
 #create-equipment-form {
+  font-family: 'Hahmlet', serif;
   color: #ffd919;
-  font-family: 'Playfair Display', serif;
+  border: .5px solid $black;
+  margin: 15px;
+  padding: 15px;
+  background-color: #494f56;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
 }
 
 #read-equipment-form {
+  font-family: 'Hahmlet', serif;
   color: #ffd919;
-  font-family: 'Playfair Display', serif;
+  border: .5px solid $black;
+  margin: 15px;
+  padding: 15px;
+  background-color: #494f56;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
 }
 
 #update-equipment-form {
+  font-family: 'Hahmlet', serif;
   color: #ffd919;
-  font-family: 'Playfair Display', serif;
+  border: .5px solid $black;
+  margin: 15px;
+  padding: 15px;
+  background-color: #494f56;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
 }
 
 #delete-equipment-form {
+  font-family: 'Hahmlet', serif;
   color: #ffd919;
-  font-family: 'Playfair Display', serif;
+  border: .5px solid $black;
+  margin: 15px;
+  padding: 15px;
+  background-color: #494f56;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
 }
 #message {
   color: #ffd919;
@@ -105,6 +149,13 @@ h3 {
 }
 #equipment_list {
   background-color: #ffd919;
-  border-radius: 5px;
   font-family: 'Playfair Display', serif;
+  border: .5px solid $black;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+
 }
