@@ -44,3 +44,43 @@ h3 {
 #sign-in:hover {
   background-color: #ffd919
 }
+// Sign out
+#sign-out {
+  font-family: 'Spectral', serif;
+  border-radius: 2px;
+}
+
+#sign-out:hover {
+  background-color: #ffd919
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px
+}
+#change-password {
+  color:  #ffd919;
+  text-shadow: 4px 4px #494f56
+}
+#create-equipment-form {
+  color: #ffd919;
+}
+
+#read-equipment-form {
+  color: #ffd919;
+}
+
+#update-equipment-form {
+  color: #ffd919;
+}
+
+#delete-equipment-form {
+  color: #ffd919;
+}
+#message {
+  color: #ffd919;
+}
+#equipment_list {
+  background-color: #ffd919;
+}
