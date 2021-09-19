@@ -11,3 +11,36 @@ h1 {
   justify-content: center;
   text-align: center
 }
+h3 {
+  color:  #ffd919;
+  text-shadow: 4px 4px #494f56
+}
+#sign-up-form {
+  font-family: 'Spectral', serif;
+  color: #ffd919;
+  display: flex;
+  justify-content: center;
+  padding: 10px
+}
+#sign-up {
+  font-family: 'Spectral', serif;
+  border-radius: 2px
+}
+#sign-up:hover {
+  background-color: #ffd919
+}
+// Sign in
+#sign-in-form {
+  font-family: 'Spectral', serif;
+  color: #ffd919;
+  display: flex;
+  justify-content: center;
+  text-align: center
+}
+#sign-in {
+  font-family: 'Spectral', serif;
+  border-radius: 2px
+}
+#sign-in:hover {
+  background-color: #ffd919
+}
