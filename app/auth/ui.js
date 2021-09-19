@@ -104,7 +104,6 @@ const onDeleteEquipmentSuccess = () => {
 };
 
 const onFailure = (error) => {
-  console.log(`Oops something went wrong! ${error.status}`)
   $("#message").text(`Oops something went wrong ${error.status}`)
   $("#sign-up-form").trigger("reset")
 };

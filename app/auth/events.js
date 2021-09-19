@@ -5,13 +5,10 @@ const store = require("./../store")
 
 const onSignUp = function (event) {
   event.preventDefault()
-  console.log("Hello")
   //get info from event and form
   const form = event.target
-  console.log(form)
 
   const data = getFormFields(form)
-  console.log(data)
 
   //make an api call using ajax
   api.signUp(data)
@@ -24,13 +21,10 @@ const onSignUp = function (event) {
 
 const onSignIn = function (event) {
   event.preventDefault()
-  console.log("Hello")
   //get info from event and form
   const form = event.target
-  console.log(form)
 
   const data = getFormFields(form)
-  console.log(data)
 
   //make an api call using ajax
   api.signIn(data)
