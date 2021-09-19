@@ -93,28 +93,28 @@ const onReadEquipment = (event) => {
 // const showForm = function (event) {
 //   const btnId = $(event.target).attr('id')
 //   if (btnId === 'create') {
-//     // $('#create-vocab').show()
-//     // $('#read-vocab').hide()
-//     // $('#update-vocab').hide()
-//     // $('#delete-vocab').hide()
+//     // $('#create-equipment').show()
+//     // $('#read-equipment').hide()
+//     // $('#update-equipment').hide()
+//     // $('#delete-equipment').hide()
 //   }
 //   if (btnId === 'read') {
-//     // $("#create-vocab").hide()
-//     // $("#read-vocab").show()
-//     // $("#update-vocab").hide()
-//     // $("#delete-vocab").hide()
+//     // $("#create-equipment").hide()
+//     // $("#read-equipment").show()
+//     // $("#update-equipment").hide()
+//     // $("#delete-equipment").hide()
 //   }
 //   if (btnId === 'update') {
-//     // $("#create-vocab").hide()
-//     // $("#read-vocab").hide()
-//     // $("#update-vocab").show()
-//     // $("#delete-vocab").hide()
+//     // $("#create-equipment").hide()
+//     // $("#read-equipment").hide()
+//     // $("#update-equipment").show()
+//     // $("#delete-equipment").hide()
 //   }
 //   if (btnId === 'delete') {
-//   //   $("#create-vocab").hide()
-//   //   $("#read-vocab").hide()
-//   //   $("#update-vocab").hide()
-//   //   $("#delete-vocab").show()
+//   //   $("#create-equipment").hide()
+//   //   $("#read-equipment").hide()
+//   //   $("#update-equipment").hide()
+//   //   $("#delete-equipment").show()
 //   }
 // }
 

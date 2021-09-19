@@ -56,9 +56,9 @@ const onChangePasswordSuccess = () => {
 }
 
 const onCreateEquipmentSuccess = (response) => {
-  $("#message").text(`Equipment  was created successfully`);
-  $("#create-equipment-form").trigger("reset");
-  const equipmentType = response.vocab;
+  $("#message").text(`Equipment  was created successfully`)
+  $("#create-equipment-form").trigger("reset")
+  const equipmentType = response.equipment
   const equipmentTypeHtml = `
   <li>
   equipmentType: ${equipmentType.equipmentType}
