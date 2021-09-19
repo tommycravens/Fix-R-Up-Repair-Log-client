@@ -40,7 +40,7 @@ return $.ajax({
 
 const createEquipment = function (data) {
 return $.ajax({
-  url: config.apiUrl + '/equipments',
+  url: config.apiUrl + '/equipment',
   method: 'POST',
   data,
   headers: {
@@ -51,7 +51,7 @@ return $.ajax({
 
 const readEquipment = function () {
 return $.ajax({
-url: config.apiUrl + '/equipments',
+url: config.apiUrl + '/equipment',
 method: 'GET',
 headers: {
   Authorization: `Bearer ${store.token}`
@@ -61,7 +61,7 @@ headers: {
 
 const updateEquipment = function (id, data) {
 return $.ajax({
-url: config.apiUrl + '/equipments/' + id,
+url: config.apiUrl + '/equipment/' + id,
 method: 'PATCH',
 data,
 headers: {
@@ -73,7 +73,7 @@ headers: {
 
 const deleteEquipment = function (id) {
 return $.ajax({
-url: config.apiUrl + '/equipments/' + id,
+url: config.apiUrl + '/equipment/' + id,
 method: 'DELETE',
  headers: {
     Authorization: 'Bearer ' + store.token

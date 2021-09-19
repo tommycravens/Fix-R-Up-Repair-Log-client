@@ -74,12 +74,12 @@ const onCreateEquipmentSuccess = (response) => {
 const onReadEquipmentSuccess = (responseData) => {
   $("#message").text(`Successfully displaying your equipment`)
   $("#read-equipment-form").trigger("reset")
-  const equipments = responseData.equipments
+  const equipment = responseData.equipment
 
-  let equipmentsHtml = ''
+  let equipmentHtml = ''
 
-  equipments.forEach(equipment => {
-    equipmentsHtml += `
+  equipment.forEach(equipment => {
+    equipmentHtml += `
   <li>
   equipmentType: ${equipment.equipmentType}
   modelName: ${equipment.modelName}
@@ -90,7 +90,7 @@ const onReadEquipmentSuccess = (responseData) => {
   </li>
 `
   })
-  $("#equipment_list").html(equipmentsHtml)
+  $("#equipment_list").html(equipmentHtml)
 };
 
 const onUpdateEquipmentSuccess = () => {
