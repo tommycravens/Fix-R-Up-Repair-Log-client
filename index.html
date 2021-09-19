@@ -11,10 +11,10 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
+
     <body>
       <h1>Fix'R Up Repair Log</h1>
       <h2 id="sign-up-header" style="display:block">Sign Up and Stop Stressing on Equipment Maintenance !</h2>
-      </br>
 
       <form id="sign-up-form">
         <label>Email:</label>
@@ -41,6 +41,7 @@
         <input id="sign-in" type="submit" value="Sign In">
       </form>
       </br>
+
       <br>
       <div class="container" style="display:none">
         <button id="create" type="submit" class="btn btn-warning">CREATE</button>
@@ -56,7 +57,7 @@
       <form id="create-equipment-form" class="form" style="display:none">
         <h4>Create New Equipment: </h4>
         <label> Equipment Type:</label>
-        <input name="equipment[type]" type="text">
+        <input name="equipment[equipmentType]" type="text">
         <label> Model Name:</label>
         <input name="equipment[modelName]" type="text">
         <label> Model Year: </label>
@@ -79,9 +80,11 @@
 
       <br>
       <form id="update-equipment-form" class="form" style="display:none">
-        <h4>Create New Equipment: </h4>
+        <h4>Update Equipment: </h4>
+        <label> Equipment ID:</label>
+        <input name="equipment[id]" type="text">
         <label> Equipment Type:</label>
-        <input name="equipment[type]" type="text">
+        <input name="equipment[equipmentType]" type="text">
         <label> Model Name:</label>
         <input name="equipment[modelName]" type="text">
         <label> Model Year: </label>
@@ -97,13 +100,13 @@
       <br>
       <form id="delete-equipment-form" class="form" style="display:none">
         <h4>Delete Equipment: </h4>
-        <label>Card ID: </label>
+        <label>Equipment ID: </label>
         <input name="equipment[id]" type="text">
         <input type="submit" value="Delete Equipment!">
       </form>
       </br>
 
-      <ul id="equipment_form"></ul>
+      <ul id="equipment_list"></ul>
 
 
       <!-- sign out -->
@@ -128,3 +131,5 @@
 
     </body>
 </html>
+
+<!-- Not totally sure how to add a nav bar in browser template. Will address this later. -->
