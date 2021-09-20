@@ -88,7 +88,7 @@ const onReadEquipmentSuccess = (responseData) => {
   <label>Model Name:</label> ${equipment.modelName},
   </br>
   <br>
-  <label>Model Year:</label> ${equipment.pronunciation},
+  <label>Model Year:</label> ${equipment.modelYear},
   </br>
   <br>
   <label>Model Number:</label> ${equipment.modelNumber},
