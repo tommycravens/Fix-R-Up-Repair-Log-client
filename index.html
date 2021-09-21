@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Fix'R Up Repair Log</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+
+    <body>
+    <div class="logo">
+    <img src="public/Screen Shot 2021-09-19 at 4.04.46 PM.png">
+    </div>
+
+    <br>
+      <h2 id="sign-up-header" style="display:block">Sign up to never stress about equipment maintenance again!</h2>
+    </br>
+
+      <form id="sign-up-form">
+        <label>Email:</label>
+        <input name="credentials[email]" type="email">
+        <label>Password:</label>
+        <input name="credentials[password]" type="password">
+        <label>Password Confirmation:</label>
+        <input name="credentials[password_confirmation]" type="password">
+        <input id="sign-up" type="submit" value="Create Account">
+      </form>
+
+      <p id="message"></p>
+
+      <br>
+      <h2 id="sign-in-header" style="display:block">Welcome Back, sign in below!</h2>
+      </br>
+
+      <br>
+      <form id="sign-in-form" style="display:block">
+        <label>Email:</label>
+        <input name="credentials[email]" type="email">
+        <label>Password:</label>
+        <input name="credentials[password]" type="password">
+        <input id="sign-in" type="submit" value="Sign In">
+      </form>
+      </br>
+
+      <br>
+      <div class="container" style="display:none">
+        <button id="create" type="submit" class="btn btn-warning">CREATE</button>
+        <button id="read" type="submit" class="btn btn-warning">READ</button>
+        <button id="update" type="submit" class="btn btn-warning">UPDATE</button>
+        <button id="delete" type="submit" class="btn btn-warning">DELETE</button>
+      </div>
+      </br>
+
+
+      <!-- I want each of these options to show when you click the corresponding button. I would also like my input labels to appear ordered in more of a list vertically instead of horizontally -->
+      <br>
+      <form id="create-equipment-form" class="form" style="display:none">
+        <h4>Create New Equipment: </h4>
+        <label> Equipment Type:</label>
+        <input name="equipment[equipmentType]" type="text">
+        <label> Model Name:</label>
+        <input name="equipment[modelName]" type="text">
+        <label> Model Year(1900-2022): </label>
+        <input name="equipment[modelYear]" type="number">
+        <label> Model Number:</label>
+        <input name="equipment[modelNumber]" type="text">
+        <label> Serial Number:</label>
+        <input name="equipment[serialNumber]" type="text">
+        <input id="create-equipment-button" type="submit" value="Create New Equipment!">
+      </form>
+      </br>
+
+      <br>
+      <form id="read-equipment-form" class="form" style="display:none">
+        <h4>Find Your Equipment: </h4>
+        <label>Click here</label>
+        <input id="read-equipment-button" type="submit" value="Find Your Equipment!">
+      </form>
+      </br>
+
+      <br>
+      <form id="update-equipment-form" class="form" style="display:none">
+        <h4>Update Equipment: </h4>
+        <label> Equipment ID:</label>
+        <input name="equipment[id]" type="text">
+        <label> Equipment Type:</label>
+        <input name="equipment[equipmentType]" type="text">
+        <label> Model Name:</label>
+        <input name="equipment[modelName]" type="text">
+        <label> Model Year(1900-2022): </label>
+        <input name="equipment[modelYear]" type="number">
+        <label> Model Number:</label>
+        <input name="equipment[modelNumber]" type="text">
+        <label> Serial Number:</label>
+        <input name="equipment[serialNumber]" type="text">
+        <input id="update-equipment-button" type="submit" value="Update Your Equipment!">
+      </form>
+      </br>
+
+      <br>
+      <form id="delete-equipment-form" class="form" style="display:none">
+        <h4>Delete Equipment: </h4>
+        <label>Equipment ID: </label>
+        <input name="equipment[id]" type="text">
+        <input id="delete-equipment-button" type="submit" value="Delete Equipment!">
+      </form>
+      </br>
+
+      <ul id="equipment_list" style="display:none">
+        <!-- <li id="equipment_list_individual"></li> -->
+      </ul>
+
+
+      <!-- sign out -->
+      <h2 id="sign-out-header" style="display:none">Want to Sign Out?</h2>
+      <button id="sign-out" type="button" style="display:none">
+        Sign Out
+      </button>
+
+      <br>
+      <!-- Change Password -->
+      <br>
+      <h3 id="change-password-header" style="display:none">Change Password</h3>
+      <form id="change-password" style="display:none">
+        <label> Old Password:</label>
+        <input name="passwords[old]" type="password">
+        <label>New Password:</label>
+        <input name="passwords[new]" type="password">
+        <input id="change-password-button" type="submit" value="change password">
+      </form>
+      </br>
+      </br>
+
+    </body>
+</html>
+
+<!-- Not totally sure how to add a nav bar in browser template. Will address this later. -->
